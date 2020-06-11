@@ -1,1 +1,1 @@
-web: gunicorn pubg_flask:app --timeout 300 --preload
+web: gunicorn __init__:app --timeout 300 --preload
