@@ -32,6 +32,7 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/', methods=['GET'])
     def hello():
+        print(__name__, "s")
         return 'Hello, World!'
     
 
@@ -54,7 +55,8 @@ def create_app(test_config=None):
                 data = data.loc[data["time"] <= float(time)]
             if rank :
                 data = data.loc[data["rank"] == rank]
-            print(data)
+            print(__name__)
+            # print(data)
             dataJson = data.to_json(orient='records')
             return dataJson
     return app
