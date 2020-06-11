@@ -11,9 +11,9 @@ from flask_cors import cross_origin
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-    def hello():
-        print(__name__, "s")
-        return 'Hello, World!'
+def hello():
+    print(__name__, "s")
+    return 'Hello, World!'
     
 
 @app.route('/get_data', methods=['GET'])
