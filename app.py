@@ -6,7 +6,6 @@ import pandas as pd
 from flask import Flask
 from flask import request
 from flask import current_app
-from pprint import pprint
 from flask_cors import cross_origin
 
 def create_app(test_config=None):
