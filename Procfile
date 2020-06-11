@@ -1,1 +1,2 @@
-web: gunicorn pubg-flask.wsgi --log-file -
+web: gunicorn app:app
+web: gunicorn run:app
