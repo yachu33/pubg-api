@@ -2,6 +2,6 @@ gunicorn
 flask-heroku
 Flask==1.1.1
 Flask-Cors==3.0.8
-numpy==1.18.4
+numpy==1.22.0
 numpydoc==0.9.1
 pandas==1.0.3
